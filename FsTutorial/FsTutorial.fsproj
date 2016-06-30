@@ -62,8 +62,25 @@
       </SubType>
     </None>
     <Content Include="packages.config" />
+    <None Include="FsLab R.fsx">
+      <SubType>
+      </SubType>
+    </None>
+    <Compile Include="System.Net.Http.fs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Deedle">
+      <HintPath>..\packages\Deedle.1.2.5\lib\net40\Deedle.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Deedle.RProvider.Plugin">
+      <HintPath>..\packages\Deedle.RPlugin.1.2.5\lib\net40\Deedle.RProvider.Plugin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DynamicInterop">
+      <HintPath>..\packages\DynamicInterop.0.7.4\lib\net40\DynamicInterop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Foogle.Charts">
       <HintPath>..\packages\Foogle.Charts.0.0.5\lib\net40\Foogle.Charts.dll</HintPath>
       <Private>True</Private>
@@ -72,16 +89,51 @@
       <HintPath>..\packages\FSharp.Charting.0.90.14\lib\net40\FSharp.Charting.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="FSharp.Core">
+      <HintPath>..\packages\FSharp.Core.3.1.2.5\lib\net40\FSharp.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="FSharp.Data">
       <HintPath>..\packages\FSharp.Data.2.3.1\lib\net40\FSharp.Data.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="FSharp.Data.TypeProviders">
+      <HintPath>..\packages\FSharp.Data.TypeProviders.5.0.0.2\lib\net40\FSharp.Data.TypeProviders.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RDotNet">
+      <HintPath>..\packages\R.NET.Community.1.6.5\lib\net40\RDotNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RDotNet.FSharp">
+      <HintPath>..\packages\R.NET.Community.FSharp.1.6.5\lib\net40\RDotNet.FSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RDotNet.NativeLibrary">
+      <HintPath>..\packages\R.NET.Community.1.6.5\lib\net40\RDotNet.NativeLibrary.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RProvider">
+      <HintPath>..\packages\RProvider.1.1.20\lib\net40\RProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RProvider.Runtime">
+      <HintPath>..\packages\RProvider.1.1.20\lib\net40\RProvider.Runtime.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
